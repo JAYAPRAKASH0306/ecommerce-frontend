@@ -9,6 +9,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const { data, error, isLoading } = useGetAllProductsQuery();
+  console.log(data)
 
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));

@@ -34,7 +34,7 @@ function App() {
             <Route path="/checkout-success" element={<CheckoutSuccess />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<CheckoutSuccess />} />
           </Routes>
         </div>
       </BrowserRouter>
