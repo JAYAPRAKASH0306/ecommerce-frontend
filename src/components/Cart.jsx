@@ -111,9 +111,9 @@ const Cart = () => {
               ) : (
                 <button
                   className="cart-login"
-                  onClick={() => navigate("/login")}
+                  onClick={() => navigate("/checkout-success")}
                 >
-                  Login to Check out
+                   Check out
                 </button>
               )}
 

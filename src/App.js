@@ -4,7 +4,7 @@ import { ToastContainer } from "react-toastify";
 
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-import NotFound from "./components/NotFound";
+// import NotFound from "./components/NotFound";
 import Cart from "./components/Cart";
 
 import "react-toastify/dist/ReactToastify.css";
@@ -29,11 +29,11 @@ function App() {
         <NavBar />
         <div className="content-container">
           <Routes>
+          <Route path="/login" element={<Login />} />
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout-success" element={<CheckoutSuccess />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<Login />} />
             <Route path="*" element={<CheckoutSuccess />} />
           </Routes>
         </div>
