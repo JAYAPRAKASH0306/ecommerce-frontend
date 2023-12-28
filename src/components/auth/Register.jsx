@@ -17,7 +17,7 @@ const Register = () => {
 
   useEffect(() => {
     if (auth._id) {
-      navigate("/");
+      navigate("/home");
     }
   }, [auth._id, navigate]);
 

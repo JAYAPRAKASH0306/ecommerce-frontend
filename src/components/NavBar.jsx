@@ -36,7 +36,7 @@ const NavBar = () => {
       {auth._id ? (
         <Logout
           onClick={() => {
-            navigate("/login");
+            navigate("/");
 
             dispatch(logoutUser(null));
             toast.warning("Logged out!", { position: "bottom-left" });

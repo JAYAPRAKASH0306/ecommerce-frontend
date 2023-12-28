@@ -29,8 +29,8 @@ function App() {
         <NavBar />
         <div className="content-container">
           <Routes>
-          <Route path="/login" element={<Login />} />
-            <Route path="/" element={<Home />} />
+          <Route path="/" element={<Login />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout-success" element={<CheckoutSuccess />} />
             <Route path="/register" element={<Register />} />
