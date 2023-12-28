@@ -45,6 +45,10 @@ const Login = () => {
           {auth.loginStatus === "pending" ? "Submitting..." : "Login"}
         </button>
         {auth.loginStatus === "rejected" ? <p>{auth.loginError}</p> : null}
+        <h5>Default Login Credentials</h5>
+      <h6> MailId: onlineshop@gmail.com</h6>
+      <h6> Password: onlineshop</h6>
+
       </StyledForm>
     </>
   );
